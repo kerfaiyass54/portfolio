@@ -1,0 +1,50 @@
+/* General Nav Style */
+nav {
+    background-color: #eeeded;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  /* Navigation Buttons */
+  nav button {
+    background-color: #c8dbe2;
+    color: rgb(25, 8, 101);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    font-family: Roboto;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+    overflow: hidden;
+  }
+
+  nav button:hover {
+    background-color: #5caeed; 
+    transform: scale(1.05); 
+  }
+  
+  nav button:active {
+    transform: scale(0.95); 
+  }
+  
+
+  nav button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(241, 240, 240, 0.3);
+    transition: all 0.5s ease;
+  }
+  
+  nav button:hover::before {
+    left: 100%; /* Creates a shine effect when hovering */
+  }
+  

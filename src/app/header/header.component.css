@@ -1,4 +1,11 @@
 .jumbotron{
     padding : 2em 1em;
     background-color: #e9ecef;
+    background-image: url('D:/projects/portfolio/src/assets/background.avif');
+}
+
+.name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: #e9ecef;
 }
