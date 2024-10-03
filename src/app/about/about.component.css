@@ -67,6 +67,11 @@
   .item:nth-child(5) {
     animation-delay: 1.7s;
   }
+
+  .carousel-conatiner{
+    margin-top: 16px;
+    width: 500px;
+  }
   
   /* Keyframes for sliding in from the left */
   @keyframes slide-in {
@@ -75,3 +80,29 @@
       transform: translateX(0); /* Move to its final position */
     }
   }
+
+ 
+  
+  .container-1 {
+    max-width: 1250px;
+    margin: auto;
+  }
+  
+  .card-1 {
+    width: 100%;
+    height: 700px;
+    overflow: auto;
+  }
+  
+  .card-img-top-1 {
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+  }
+  
+  
+  
+  .ngb-carousel .carousel-indicators {
+    bottom: -30px;
+  }
+  
