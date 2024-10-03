@@ -21,8 +21,8 @@ export const routes: Routes = [
     {
         path: 'about', component:AboutComponent
     },
-    { path: '', redirectTo: '/home', pathMatch: 'full' }, 
-    { path: '**', redirectTo: '/home' } 
+    { path: '', redirectTo: '/about', pathMatch: 'full' }, 
+    { path: '**', redirectTo: '/about' } 
 ];
 
 
