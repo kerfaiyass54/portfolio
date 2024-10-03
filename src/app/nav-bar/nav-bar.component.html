@@ -1,20 +1,37 @@
 <nav class="navbar-expand-md border-bottom mb-3">
     <div class="container">
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center display-4">
             
               <li class="nav-item">
-                <button class="nav-link text-secondary" (click)="navigateTo('/about')">About</button>
+                <button class="nav-link text-secondary display-4" (click)="homePage()">About</button>
               </li>
+              
               <li class="nav-item">
-                <button class="nav-link text-secondary" (click)="navigateTo('/skills')">Skills</button>
+                <button class="nav-link text-secondary display-4" (click)="skillsPage()">Skills</button>
               </li>
+              
               <li class="nav-item">
-                <button class="nav-link text-secondary" (click)="navigateTo('/projects')">Projects</button>
+                <button class="nav-link text-secondary display-4" (click)="projectPage()">Projects</button>
               </li>
+              
               <li class="nav-item">
-                <button class="nav-link text-secondary" (click)="navigateTo('/contact')">Contact</button>
+                <button class="nav-link text-secondary display-4" (click)="contactPage()">Contact</button>
               </li>
-            
+              
             </ul>
     </div>
 </nav>
+
+
+<div *ngIf="isHome">
+  <app-about />
+</div>
+<div *ngIf="isSkills">
+  <app-skills />
+</div>
+<div *ngIf="isProjects">
+  <app-projects />
+</div>
+<div *ngIf="isContact">
+  <app-contact />
+</div>
