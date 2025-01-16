@@ -1,78 +1,31 @@
-<div class="container" style="justify-content: center;" #scrollContainer>
-    <div class="card item" style="justify-content: center;">
-
-        <div class="card-body" style="justify-content: center;">
-            <h3 class="card-title" style="text-align: center;">About me</h3>
-            <img src="../assets/photo.jpg" class="card-img-top" alt="yassine-kerfai" class="circular-photo">
-        
-              <p id="intro">  Yassine KERFAI, Software engineer graduated from the National School of Engineering of Tunis
-            </p>
-
-        </div>
-
-    </div>
-
-    
-</div>
-
-
-<h4 class="display-4" style="text-align: center;">Educational experience</h4>
-<div class="container" style="justify-content: center;" #scrollContainer>
-    <div class="card item" style="justify-content: center;">
-        <div class="card-body" style="justify-content: center;">
-            <h3 class="card-title" style="text-align: center;"></h3>
-            <img src="../assets/enit.jpg"  alt="yassine-kerfai">
-        
-              <p id="intro">National School of Engineering of Tunis
-            </p>
-            <p>Computer science engineering Degree</p>
-        </div>
-    
-    </div>
-    <div class="card item" style="justify-content: center;">
-        <div class="card-body" style="justify-content: center;">
-            <div class="card-body" style="justify-content: center;">
-                <h3 class="card-title" style="text-align: center;"></h3>
-                <img src="../assets/ipeiem.jpg"  alt="yassine-kerfai" style="width:fit-content;height: fit-content;">
-            
-                  <p id="intro">Preparatory Institute of El Manar
-                </p>
-                <p>Preparatory studies Degree</p>
-            </div>
-        </div>
-    
-    </div>
-</div>
-
-<h4 class="display-4" style="text-align: center;">Volunteering</h4>
-
-<div class="container-1">
-    <ngb-carousel>
-      <ng-template ngbSlide>
-        <div class="card-1">
-          <img src="../assets/1.jpg" class="card-img-top-1" alt="Image 1">
-          <div class="card-body-1">
-          </div>
-        </div>
-      </ng-template>
-  
-      <ng-template ngbSlide>
-        <div class="card-1">
-          <img src="../assets/2.jpg" class="card-img-top-1" alt="Image 2">
-          <div class="card-body-1">
-          </div>
-        </div>
-      </ng-template>
-  
-      <ng-template ngbSlide>
-        <div class="card-1">
-          <img src="../assets/3.jpg" class="card-img-top-1" alt="Image 3">
-          <div class="card-body-1">
-          </div>
-        </div>
-      </ng-template>
-    </ngb-carousel>
-    <p id="intro" style="text-align: center;">IEEE ENIT Student Branch
-    </p>
+<div class="row">
+  <div class="col-4">
+    <nav id="about-section" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Educational experience</a>
+        <a class="nav-link" href="#volunteer">Volunteering</a>
+      </nav>
+    </nav>
   </div>
+</div>
+
+
+<div class="col-8">
+  <div data-bs-spy="scroll" data-bs-target="#about-section" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+    <div id="about">
+
+    </div>
+    <div id="education">
+
+    </div>
+    <div id="volunteer">
+
+    </div>
+
+  </div>
+</div>
+
+
+
 
