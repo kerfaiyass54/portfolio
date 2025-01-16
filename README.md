@@ -1,27 +1,40 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+This is a personal portfolio project built with Angular. It showcases various projects, skills, and technologies I have worked with. The website features sections for home, skills, projects, and contact information, designed to highlight my expertise and experience.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Responsive Design**: The portfolio is user-friendly.
+- **Project Showcase**: Displays a list of projects with technologies used.
+- **Skills Section**: Highlights my proficiency in various programming languages, frameworks, and tools.
+- **Contact Form**: Allows visitors to get in touch with me directly via a contact links and e-mail.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: The front-end framework used to build the portfolio.
+- **HTML5**: For structuring content.
+- **CSS3**: For styling and layout.
+- **TypeScript**: For adding static types to the JavaScript code.
+- **Bootstrap**: For responsive and modern UI components.
+- **Node.js**: For running the development server.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Follow these steps to run the project locally:
 
-## Running unit tests
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kerfaiyass54/portfolio.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Install dependancies:
+   ```bash
+   npm install
 
-## Running end-to-end tests
+3. Run the application:
+   ```bash
+   ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. See the full portfolio:
+   ```bash
+   localhost:4200
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
