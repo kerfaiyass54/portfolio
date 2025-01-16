@@ -9,7 +9,7 @@
   border-width: 100px;
 }
 
-#about-title{
+.about-title{
   font-size: 300%;
   color: #387eb8;
 }
@@ -54,4 +54,31 @@ li:hover{
 
 .col-4{
   border-radius: 8px;
+
+}
+
+#about-section{
+  position: fixed;
+  border-right-style: groove;
+  border-color: white;
+}
+
+#navigation{
+  background-color: #ffffff;
+}
+
+
+#educational-card{
+  border-width: 10px;
+}
+
+#education{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+hr{
+  width: 80%;
+  height: 100%;
 }
