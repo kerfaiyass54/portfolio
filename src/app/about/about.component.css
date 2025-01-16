@@ -4,6 +4,9 @@
   width: 100%;
   max-width: 90%;
   margin-top: 60px;
+  border-radius: 25px;
+  border: #1421b2;
+  border-width: 100px;
 }
 
 #about-title{
@@ -35,4 +38,20 @@
   margin-bottom: 25px;
   font-size: 20px;
 
+}
+
+li{
+  border-radius: 12px;
+  transition: all 0.6s ease;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+
+li:hover{
+  background-color: #1421b2;
+  color: #ffffff;
+}
+
+.col-4{
+  border-radius: 8px;
 }
