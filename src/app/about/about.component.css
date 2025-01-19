@@ -11,7 +11,7 @@
 
 .about-title{
   font-size: 300%;
-  color: #387eb8;
+  color: #f10a44;
 }
 
 .card-title{
@@ -68,9 +68,7 @@ li:hover{
 }
 
 
-#educational-card{
-  border-width: 10px;
-}
+
 
 #education{
   margin-top: 50px;
@@ -81,4 +79,49 @@ li:hover{
 hr{
   width: 80%;
   height: 100%;
+}
+
+
+.card-title{
+  font-size: 130%;
+  transition: all 0.5s ease;
+  border-radius: 10%;
+  padding:5%;
+}
+
+.card-title:hover{
+  background-color: red;
+  color: #eeeded;
+}
+
+.card{
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  border-style: inset;
+  border-color: #387eb8;
+  border-width: 1.5px;
+
+}
+
+.card:hover{
+  background-color: #387eb8;
+  color: #eeeded;
+}
+
+.card:hover .card-title{
+  background-color: red;
+  color: #eeeded;
+}
+
+.btn-primary{
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover{
+  background-color: #eeeded;
+  color: black;
+}
+
+img{
+  border-radius: 50%;
 }
