@@ -1,37 +1,26 @@
+<app-header></app-header>
 <nav class="navbar-expand-md border-bottom mb-3">
     <div class="container">
         <ul class="nav justify-content-center display-4">
-            
               <li class="nav-item">
-                <button class="nav-link text-secondary display-4" (click)="homePage()">About</button>
+                <button class="nav-link text-secondary display-4" routerLink="/about" routerLinkActive="activebutton"
+                        ariaCurrentWhenActive="page">About</button>
               </li>
-              
               <li class="nav-item">
-                <button class="nav-link text-secondary display-4" (click)="skillsPage()">Skills</button>
+                <button class="nav-link text-secondary display-4" routerLink="/skills" routerLinkActive="activebutton"
+                        ariaCurrentWhenActive="page">Skills</button>
               </li>
-              
               <li class="nav-item">
-                <button class="nav-link text-secondary display-4" (click)="projectPage()">Projects</button>
+                <button class="nav-link text-secondary display-4" routerLink="/projects" routerLinkActive="activebutton"
+                        ariaCurrentWhenActive="page">Projects</button>
               </li>
-              
               <li class="nav-item">
-                <button class="nav-link text-secondary display-4" (click)="contactPage()">Contact</button>
+                <button class="nav-link text-secondary display-4" routerLink="/contact" routerLinkActive="activebutton"
+                        ariaCurrentWhenActive="page">Contact</button>
               </li>
-              
             </ul>
     </div>
 </nav>
 
 
-<div *ngIf="isHome">
-  <app-about />
-</div>
-<div *ngIf="isSkills">
-  <app-skills />
-</div>
-<div *ngIf="isProjects">
-  <app-projects />
-</div>
-<div *ngIf="isContact">
-  <app-contact />
-</div>
+

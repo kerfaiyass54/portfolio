@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   selector: 'app-about',
   standalone: true,
