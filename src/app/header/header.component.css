@@ -1,12 +1,15 @@
 
 
-.display-4{
-    font-size:28px;
-    font-weight: 1400;
+.header{
+
+    font-weight: bold;
     color: #ebeaf3;
     background: linear-gradient(#6663df, #2fbdff);
 }
 
+h1{
+  font-size: 80px;
+}
 
 .text-center{
   width: 100%;

@@ -22,7 +22,7 @@ export const routes: Routes = [
   },
   {
     component: ContactComponent,
-    path: 'contacts'
+    path: 'contact'
   }
 
 
