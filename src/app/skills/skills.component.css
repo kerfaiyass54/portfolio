@@ -19,31 +19,31 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 22%; /* Ensure each card takes the same width */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for styling */
-    height: 300px; /* Set a fixed height to ensure uniformity */
-    box-sizing: border-box; /* Ensure padding is included in the height */
+    width: 22%;
+    padding: 1%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 300px;
+    box-sizing: border-box;
 }
 
 .card img {
-    width: 100%; /* Ensure the image fits the card's width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height for all images */
-    object-fit: contain; /* Ensure the entire image is visible without cropping */
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 
 .card p {
     margin-top: 10px;
-    flex-grow: 1; /* Ensures the paragraph grows to fill available space if needed */
+    flex-grow: 1;
 }
 
 .container-1 {
     background-color: lightblue;
     padding: 20px;
   }
-  
+
   .container-2 {
     background-color: lightgreen;
     padding: 20px;
@@ -55,38 +55,13 @@
   }
 
   /* Container styling */
-  
+
   /* Styling for individual items */
   .item {
-    opacity: 0; /* Hidden at start */
-    transform: translateX(-100%); /* Start off the screen */
-    animation: slide-in 0.5s forwards;
+     /* Start off the screen */
   }
-  
+
   /* Delay each item's animation for a staggered effect */
-  .item:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  .item:nth-child(2) {
-    animation-delay: 0.5s;
-  }
-  .item:nth-child(3) {
-    animation-delay: 0.9s;
-  }
-  .item:nth-child(4) {
-    animation-delay: 1.3s;
-  }
-  .item:nth-child(5) {
-    animation-delay: 1.7s;
-  }
-  
-  /* Keyframes for sliding in from the left */
-  @keyframes slide-in {
-    to {
-      opacity: 1;
-      transform: translateX(0); /* Move to its final position */
-    }
-  }
-  
-  
-  
+
+
+

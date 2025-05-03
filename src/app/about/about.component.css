@@ -173,18 +173,8 @@
 /*}*/
 
 
-*{
-  justify-content: center;
-  align-content: center;
-}
 
 
-#parts-about{
-  justify-content: center;
-  height: 120%;
-  width: 40%;
-  padding: 5%;
-}
 
 #content-about{
   overflow: auto;
@@ -209,4 +199,47 @@ button:hover{
 ul{
   border-radius: 10px;
   padding: 3%;
+}
+
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.col-3{
+  margin-top: 5%;
+}
+
+.col{
+  margin-top: 2.5%;
 }
