@@ -1,25 +1,34 @@
 
-<div class="row">
-  <div class="col-3">
-    <div class="card">
-      <div class="card-body"  id="parts-about">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><button type="button" class="btn">About me</button></li>
-          <li class="list-group-item"><button type="button" class="btn">Curriculum</button></li>
-          <li class="list-group-item"><button type="button" class="btn">Volunteering</button></li>
-          <li class="list-group-item"><button type="button" class="btn">Languages</button></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col"  id="content-about">
-    <div class="card">
-      <div class="card-body">
 
-      </div>
+
+
+        <div class="buttons-about">
+          <button type="button" class="btn btn-primary about-button">About me</button>
+          <button type="button" class="btn btn-primary about-button">Volunteer</button>
+          <button type="button" class="btn btn-primary about-button">Education</button>
+        </div>
+
+
+  <div class="col"  id="content-about">
+    <div *ngIf="aboutMe">
+
     </div>
+
+    <div *ngIf="educ">
+
+    </div>
+
+    <div *ngIf="volunteer">
+
+    </div>
+
+    <div *ngIf="lang">
+
+    </div>
+
+
   </div>
-</div>
+
 
 
 

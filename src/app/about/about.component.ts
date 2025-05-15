@@ -1,18 +1,20 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgForOf, NgIf} from "@angular/common";
 
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NgbModule],
+  imports: [NgbModule, NgForOf, NgIf],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
 export class AboutComponent implements OnInit {
-  aboutMe = false;
+  aboutMe = true;
   volunteer = false;
   educ = false;
+  lang = false;
   constructor() { }
 
   ngOnInit(): void {

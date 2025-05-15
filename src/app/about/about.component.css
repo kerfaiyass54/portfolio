@@ -1,245 +1,43 @@
-
-
-/*.card {*/
-/*  width: 100%;*/
-/*  max-width: 90%;*/
-/*  margin-top: 60px;*/
-/*  border-radius: 25px;*/
-/*  border: #1421b2;*/
-/*  border-width: 100px;*/
-/*  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);*/
-
-/*}*/
-
-
-
-
-/*.part {*/
-/*  animation: slide-in 0.5s ease-out;*/
-/*}*/
-
-/*.about-title{*/
-/*  font-size: 300%;*/
-/*  color: #f10a44;*/
-/*}*/
-
-/*.card:hover {*/
-/*  transform: translateY(-5px);*/
-/*  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);*/
-/*}*/
-
-/*.card-title{*/
-/*  font-size: 240%;*/
-/*  font-weight: bold;*/
-/*}*/
-
-
-
-
-/*@keyframes fade-in {*/
-/*  from {scale: .6; opacity: 0}*/
-/*  to {scale: 1; opacity: 1}*/
-/*}*/
-
-
-/*.nav-link{*/
-/*  transition: all 0.6s ease;*/
-/*  border-radius: 12px;*/
-/*  font-size: 120%;*/
-/*  margin-bottom: 10%;*/
-/*  font-weight: bold;*/
-/*  text-align: center;*/
-/*}*/
-
-/*.nav-link:hover{*/
-/*  background-color: #A9B9CB;*/
-/*  color:#2c3e50;*/
-/*}*/
-
-
-/*#nav-title{*/
-/*  margin-bottom: 10%;*/
-/*  font-size: 100%;*/
-
-/*}*/
-
-/*li{*/
-/*  border-radius: 12px;*/
-/*  transition: all 0.6s ease;*/
-/*  margin-bottom: 3%;*/
-/*  margin-top: 2%;*/
-/*}*/
-
-/*li:hover{*/
-/*  background-color: #1421b2;*/
-/*  color: #ffffff;*/
-/*}*/
-
-/*.col-4{*/
-/*  border-radius: 8px;*/
-
-/*}*/
-
-/*#about-section{*/
-/*  border-right-style: groove;*/
-/*  border-color: white;*/
-/*  height: 20%;*/
-/*  width: 20%;*/
-/*  position: fixed;*/
-/*}*/
-
-/*#navigation{*/
-/*  background-color: #ffffff;*/
-/*}*/
-
-
-/*.col-8{*/
-/*  overflow: auto;*/
-/*  max-height: 400px;*/
-/*}*/
-
-
-/*.content-portfolio{*/
-/*  overflow: auto;*/
-/*  max-height: 80px;*/
-/*}*/
-
-
-/*#education{*/
-/*  margin-top: 50px;*/
-/*  margin-bottom: 50px;*/
-/*}*/
-
-
-/*hr{*/
-/*  width: 80%;*/
-/*  height: 100%;*/
-/*}*/
-
-
-/*.card-title{*/
-/*  font-size: 130%;*/
-/*  transition: all 0.5s ease;*/
-/*  border-radius: 10%;*/
-/*  padding:5%;*/
-/*}*/
-
-/*.card-title:hover{*/
-/*  background-color: red;*/
-/*  color: #eeeded;*/
-/*}*/
-
-/*.card{*/
-/*  transition: all 0.5s ease;*/
-/*  border-radius: 15px;*/
-/*  border-style: inset;*/
-/*  border-color: #387eb8;*/
-/*  border-width: 1.5px;*/
-/*  width: 100%;*/
-
-
-/*}*/
-
-/*.educational-card{*/
-/*  align-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
-
-
-/*.card:hover{*/
-/*  background-color: #387eb8;*/
-/*  color: #eeeded;*/
-/*}*/
-
-/*.card:hover .card-title{*/
-/*  background-color: red;*/
-/*  color: #eeeded;*/
-/*}*/
-
-/*.btn-primary{*/
-/*  transition: all 0.5s ease;*/
-/*  align-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
-/*.btn-primary:hover{*/
-/*  background-color: #eeeded;*/
-/*  color: black;*/
-/*}*/
-
-/*img{*/
-/*  border-radius: 50%;*/
-/*}*/
-
-
-
-
-
-#content-about{
-  overflow: auto;
-  max-height: 70%;
+.buttons-about{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 2%;
 }
 
-
-button{
-  width: 100%;
-  transition: all 0.5s ease;
-  margin-top: 2%;
-  font-size: 150%;
+.about-button{   /* Control overall size */
+  aspect-ratio: 1 / 1;      /* Ensures it's always a circle */
+  border-radius: 50%;       /* Makes it round */
+  display: flex;            /* Center content */
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db; /* Example color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 80%;
+  overflow: hidden;
+  padding: 2%;
+  margin-right: 2%;
+  transition: all 1s ease;
+  animation-name: slide-in;
+  animation-duration: 1s;
   font-weight: bold;
 }
 
-button:hover{
-  background-color: #6f40e6;
-  color: #dddddd;
-  margin-top: 2%;
-}
-
-ul{
-  border-radius: 10px;
-  padding: 3%;
+.about-button:hover{
+  transform: rotate(360deg);
+  background-color: #366994;
 }
 
 
-.card::after, .card::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 10px;
-  animation: 3s spin linear infinite;
-}
-.card::before{
-  filter: blur(1.5rem);
-  opacity: 0.5;
-}
-@keyframes spin{
+
+@keyframes slide-in {
   from{
-    --angle: 0deg;
+    opacity: 0;
   }
+
   to{
-    --angle: 360deg;
+    opacity: 1;
   }
-}
-
-
-@property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.col-3{
-  margin-top: 5%;
-}
-
-.col{
-  margin-top: 2.5%;
 }
