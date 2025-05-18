@@ -21,7 +21,7 @@
   margin-right: 2%;
   transition: all 1s linear;
   animation-name: slide-in;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   font-weight: bold;
 }
 
@@ -35,7 +35,7 @@
 @keyframes slide-in {
   from{
     opacity: 0;
-    transform: translateY(400px);
+    transform: translateY(40px);
   }
 
   to{
