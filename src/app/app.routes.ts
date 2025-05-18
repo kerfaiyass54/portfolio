@@ -3,11 +3,15 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
-import {NavBarComponent} from "./nav-bar/nav-bar.component";
+import {MainPageComponent} from "./main-page/main-page.component";
+
 
 export const routes: Routes = [
-
-
+  {
+    component: MainPageComponent,
+    path:''
+  }
+,
   {
     component: AboutComponent,
     path: 'about'
