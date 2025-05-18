@@ -15,13 +15,13 @@
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 80%;
+  font-size: 100%;
   overflow: hidden;
   padding: 2%;
   margin-right: 2%;
-  transition: all 1s ease;
+  transition: all 1s linear;
   animation-name: slide-in;
-  animation-duration: 1s;
+  animation-duration: 2s;
   font-weight: bold;
 }
 
@@ -35,9 +35,11 @@
 @keyframes slide-in {
   from{
     opacity: 0;
+    transform: translateY(400px);
   }
 
   to{
     opacity: 1;
+    transform: translateY(0px);
   }
 }
