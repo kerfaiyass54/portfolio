@@ -35,14 +35,14 @@ export class AboutComponent implements OnInit {
 
   showEduc(){
     this.aboutMe = false;
-    this.volunteer = true;
-    this.educ = false;
+    this.volunteer = false;
+    this.educ = true;
   }
 
   showVolunteer(){
     this.aboutMe = false;
-    this.volunteer = false;
-    this.educ = true;
+    this.volunteer = true;
+    this.educ = false;
   }
 
 
