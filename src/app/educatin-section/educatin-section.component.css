@@ -11,6 +11,8 @@
   width: 70%;
   margin-left: 13%;
   margin-top: 8%;
+  animation-name: slide-in;
+  animation-duration: 0.8s;
 }
 
 img{
@@ -20,10 +22,18 @@ img{
   object-fit: cover;
   align-content: center;
   align-items: center;
-  animation-name: movement;
-  animation-duration: 0.8s;
-  animation-fill-mode: both;
-  animation-delay: 0.5s;
+}
+
+@keyframes slide-in {
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 
