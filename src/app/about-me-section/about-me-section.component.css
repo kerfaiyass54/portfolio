@@ -6,9 +6,18 @@
   margin-top: 1.5%;
 }
 
-/*.col-4{*/
-/*  padding-left: 20%;*/
-/*}*/
+.list-group{
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.list-group-item{
+  font-weight: bold;
+  animation-name: detailsMouvement;
+  animation-duration: 1s;
+  font-size: 190%;
+}
 
 .circular-photo {
   width: 400px;
@@ -36,5 +45,17 @@
   to{
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes detailsMouvement {
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

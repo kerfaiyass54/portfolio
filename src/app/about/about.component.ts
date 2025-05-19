@@ -17,6 +17,7 @@ export class AboutComponent implements OnInit {
   aboutMe = false;
   volunteer = false;
   educ = false;
+  noButton= true;
 
   constructor() { }
 
@@ -31,18 +32,21 @@ export class AboutComponent implements OnInit {
     this.aboutMe = true;
     this.volunteer = false;
     this.educ = false;
+    this.noButton= false;
   }
 
   showEduc(){
     this.aboutMe = false;
     this.volunteer = false;
     this.educ = true;
+    this.noButton= false;
   }
 
   showVolunteer(){
     this.aboutMe = false;
     this.volunteer = true;
     this.educ = false;
+    this.noButton= false;
   }
 
 

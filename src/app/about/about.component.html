@@ -10,6 +10,10 @@
 
 
   <div class="col"  id="content-about">
+    <div *ngIf="noButton">
+      <h1 class="text-center">Click on one of the buttons here to see my details</h1>
+    </div>
+
     <div *ngIf="aboutMe">
       <app-about-me-section></app-about-me-section>
     </div>

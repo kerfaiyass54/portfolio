@@ -5,13 +5,13 @@
   margin-top: 2%;
 }
 
-.about-button{   /* Control overall size */
-  aspect-ratio: 1 / 1;      /* Ensures it's always a circle */
-  border-radius: 50%;       /* Makes it round */
-  display: flex;            /* Center content */
+button{
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3498db; /* Example color */
+  background-color: #3498db;
   color: white;
   border: none;
   cursor: pointer;
@@ -19,29 +19,23 @@
   overflow: hidden;
   padding: 2%;
   margin-right: 2%;
-  transition: all 1s linear;
-  animation: slide-in 0.5s ease forwards;
+  transition: all 1s ease;
+  /*animation: slide-in 0.5s ease forwards;*/
   font-weight: bold;
-  opacity: 0;
-  transform: translateY(20px);
 }
 
 
-.delay-2{
-  animation-delay: 0.3s;
-}
-
-
-.delay-3{
-
-  animation-delay: 0.6s;
-}
-
-.about-button:hover{
+button:hover{
   transform: rotate(360deg);
   background-color: #366994;
 }
 
+
+h1{
+  margin-top: 10%;
+  animation-name: slide-in ;
+  animation-duration: 0.8s;
+}
 
 
 @keyframes slide-in {
@@ -53,5 +47,8 @@
   to{
     opacity: 1;
     transform: translateY(0px);
+    transition: all 0.4s ease;
   }
 }
+
+
