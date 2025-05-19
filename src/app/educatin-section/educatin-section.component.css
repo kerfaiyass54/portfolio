@@ -1,4 +1,29 @@
 .col{
   justify-content: center;
   text-align: center;margin-top: 1.5%;
+  align-content: center;
+  align-items: center;
 }
+
+.card{
+  align-content: center;
+  align-items: center;
+  width: 70%;
+  margin-left: 13%;
+  margin-top: 8%;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-content: center;
+  align-items: center;
+  animation-name: movement;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+
