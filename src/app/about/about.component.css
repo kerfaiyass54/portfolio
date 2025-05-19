@@ -11,7 +11,7 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3498db;
+  background-color: #83c5be;
   color: white;
   border: none;
   cursor: pointer;
@@ -27,7 +27,7 @@ button{
 
 button:hover{
   transform: rotate(360deg);
-  background-color: #366994;
+  background-color: #006d77;
 }
 
 
