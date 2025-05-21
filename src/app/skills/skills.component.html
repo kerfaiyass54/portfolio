@@ -1,6 +1,29 @@
 <div class="buttons-skills">
-  <button type="button" class="btn btn-primary about-button1" (click)="showLanguages()">Lsnguages</button>
+  <button type="button" class="btn btn-primary about-button1" (click)="showLanguages()">Languages</button>
   <button type="button" (click)="showProg()" class="btn btn-primary about-button2">Programming</button>
   <button type="button" (click)="showFrame()" class="btn btn-primary about-button3">Framework</button>
   <button type="button" (click)="showTools()" class="btn btn-primary">IT-Tools</button>
+</div>
+
+
+<div class="col">
+  <div *ngIf="noButton">
+    <h1 class="text-center">Click on one of the buttons here to see my skills</h1>
+  </div>
+
+  <div *ngIf="prog">
+    <app-programming-languages></app-programming-languages>
+  </div>
+
+  <div *ngIf="tools">
+    <app-it-tools></app-it-tools>
+  </div>
+
+  <div *ngIf="frame">
+    <app-frameworks></app-frameworks>
+  </div>
+
+  <div *ngIf="lang">
+    <app-languages></app-languages>
+  </div>
 </div>
