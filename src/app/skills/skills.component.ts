@@ -9,4 +9,20 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+
+  showLanguages() {
+
+  }
+
+  showProg() {
+
+  }
+
+  showFrame() {
+
+  }
+
+  showTools() {
+
+  }
 }
