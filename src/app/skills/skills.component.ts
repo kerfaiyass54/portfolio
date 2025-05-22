@@ -28,18 +28,34 @@ export class SkillsComponent {
 
 
   showLanguages() {
-
+    this.noButton = false;
+    this.prog = false;
+    this.tools = false;
+    this.frame = false;
+    this.lang = true;
   }
 
   showProg() {
-
+    this.noButton = false;
+    this.prog = true;
+    this.tools = false;
+    this.frame = false;
+    this.lang = false;
   }
 
   showFrame() {
-
+    this.noButton = false;
+    this.prog = false;
+    this.tools = false;
+    this.frame = true;
+    this.lang = false;
   }
 
   showTools() {
-
+    this.noButton = false;
+    this.prog = false;
+    this.tools = true;
+    this.frame = false;
+    this.lang = false;
   }
 }
