@@ -1,0 +1,22 @@
+<div class="buttons-projects">
+  <button type="button" class="btn btn-primary project-button" (click)="showPersonal()">Personal projects</button>
+  <button type="button" (click)="showAcademic()" class="btn btn-primary project-button">Academic projects</button>
+</div>
+
+
+<div class="col"  id="content-project">
+  <div *ngIf="noButton">
+    <h1 class="text-center">Click on one of the buttons here to see my projects</h1>
+  </div>
+
+  <div *ngIf="side">
+
+  </div>
+
+  <div *ngIf="academic">
+
+  </div>
+
+
+
+</div>
