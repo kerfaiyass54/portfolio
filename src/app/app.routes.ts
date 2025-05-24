@@ -8,7 +8,7 @@ import {MainPageComponent} from "./main-page/main-page.component";
 
 export const routes: Routes = [
   {
-    component: MainPageComponent,
+    component: AboutComponent,
     path:''
   }
 ,
