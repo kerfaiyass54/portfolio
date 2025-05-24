@@ -6,7 +6,7 @@
   @keyframes slide-in {
     from{
       opacity: 0;
-      transform: translateX(-40px);
+      transform: translateX(40px);
     }
 
     to {
@@ -28,6 +28,8 @@
   }
 
 
+
+
   h1{
     margin-top: 5%;
     font-size: 435%;
@@ -35,3 +37,55 @@
     animation-duration: 0.9s;
     animation-fill-mode: both;
   }
+
+  .logos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 11%;
+  }
+
+  img{
+    width: 180px;
+    height: 180px;
+    align-content: center;
+    align-items: center;
+    max-width: fit-content;
+
+  }
+
+
+
+  .delay-1,.delay-2,.delay-3,.delay-4,.delay-5{
+    animation-name: slide-in ;
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+  }
+
+
+  .delay-1{
+    animation-delay: 0.4s;
+  }
+
+
+  .delay-2{
+    animation-delay: 0.7s;
+  }
+
+  .delay-3{
+    animation-delay: 1s;
+  }
+
+  .delay-4{
+    animation-delay: 1.3s;
+  }
+
+  .delay-5{
+    animation-delay: 1.6s;
+  }
+
+
+  a{
+    margin-left: 1.5%;
+  }
+
