@@ -3,13 +3,13 @@
 .col-4, .col-8{
   justify-content: center;
   text-align: center;
-  margin-top: 1.5%;
+  margin-top: 1.1%;
 }
 
 .list-group{
   width: 50%;
   margin-left: 20%;
-  margin-top: 5%;
+  margin-top: 4.5%;
 }
 
 .list-group-item{
@@ -46,7 +46,7 @@
 @keyframes movement {
   from{
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-40px);
   }
 
   to{
@@ -58,7 +58,7 @@
 @keyframes detailsMouvement {
   from{
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 
   to{
