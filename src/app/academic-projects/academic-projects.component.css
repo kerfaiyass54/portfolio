@@ -102,3 +102,9 @@
 }
 
 
+.delay-2{
+  animation-name: slide-in-left;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
