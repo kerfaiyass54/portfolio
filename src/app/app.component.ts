@@ -7,10 +7,11 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import {NgOptimizedImage} from "@angular/common";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NgbModule, NavBarComponent,AboutComponent,SkillsComponent,ProjectsComponent,ContactComponent],
+  imports: [RouterOutlet, HeaderComponent, NgbModule, NavBarComponent,AboutComponent,SkillsComponent,ProjectsComponent,ContactComponent,NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
