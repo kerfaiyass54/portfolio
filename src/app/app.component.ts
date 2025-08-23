@@ -11,7 +11,8 @@ import {NgOptimizedImage} from "@angular/common";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NgbModule, NavBarComponent,AboutComponent,SkillsComponent,ProjectsComponent,ContactComponent,NgOptimizedImage],
+  imports: [RouterOutlet, HeaderComponent, NgbModule, NavBarComponent,AboutComponent,NgOptimizedImage,
+    SkillsComponent,ProjectsComponent,ContactComponent,NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
