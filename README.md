@@ -5,9 +5,9 @@ This is a personal portfolio project built with Angular. It showcases various pr
 ## Features
 
 - **Responsive Design**: The portfolio is user-friendly.
-- **Project Showcase**: Displays a list of projects with technologies used.
+- **Project Showcase**: Displays a list of projects with their used technologies.
 - **Skills Section**: Highlights my proficiency in various programming languages, frameworks, and tools.
-- **Contact Form**: Allows visitors to get in touch with me directly via a contact links and e-mail.
+- **Contact Section**: Allows visitors to get in touch with me directly via many links.
 
 ## Technologies Used
 
