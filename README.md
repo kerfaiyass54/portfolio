@@ -138,7 +138,7 @@ Contributions are **welcome and appreciated**! Here’s how you can help:
 ### **Steps to Contribute**
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/kerfaiyass54/portfolio.git
    cd portfolio
    ```
 
